@@ -1,0 +1,48 @@
+$size: (
+  "xs": 0.1,
+  "s": 0.5,
+  "m": 0.5625,
+  "l": 0.625,
+  "xl": 0.75,
+);
+$direct: (
+  "t": "top",
+  "l": "left",
+  "r": "right",
+  "b": "bottom",
+);
+$colors: (
+  "grey-light": (
+    "base": #e4e7ed,
+  ),
+  "default": (
+    "base": #ffffff,
+  ),
+  "border": (
+    "base": #e5e7eb,
+  ),
+  "primary": (
+    "hover": #3ca0dc,
+    "base": #1597e5,
+  ),
+  "success": (
+    "hover": #90dcdd,
+    "base": #69dadb,
+  ),
+  "warning": (
+      "hover": #ffc39e,
+    "base": #ffab76,
+  ),
+  "danger": (
+    "hover": #f18787,
+    "base": #f56c6c,
+  ),
+  "error": (
+    "hover": #ff9797,
+    "base": #ff6363,
+  ),
+  "info": (
+    "hover": #d5e6dc,
+    "base": #c8e3d4,
+  ),
+);

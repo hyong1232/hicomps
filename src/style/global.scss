@@ -1,0 +1,60 @@
+@import './variable';
+body,
+html,
+#app {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+@each $var,$key in $size {
+    .fz-#{$var} {
+        font-size: $key+rem;
+    }
+}
+:root {
+    --hy-comp-btn-fz: .375rem;
+    --hy-comp-btn-default: #ffffff;
+    --hy-comp-btn: #1597e5;
+    --hy-cover-color: #00000080;
+    --hy-popper-zindex: 100;
+    --hy-comp-border-color: #e5e7eb;
+    --hy-comp-white-light:  #e4e7ed;
+    --hy-comp-white: #ffffff;
+}
+
+@each $var,$key in $direct {
+    .bd-a {
+        border: 1px solid map-get($map:map-get($map: $colors, $key: 'border'), $key: 'base');
+    }
+    @each $s,$sk in $size {
+        .m#{$var}-#{$s} {
+            margin-#{$key}: $sk + rem;
+        }
+    }
+    @each $vv in ('x', 'y'){
+        .bd-#{$vv} {
+            border: 1px solid map-get($map:map-get($map: $colors, $key: 'border'), $key: 'base');
+        }
+    }
+    .bd-#{$var} {
+        border-#{$key}: 1px solid map-get($map:map-get($map: $colors, $key: 'border'), $key: 'base');
+    }
+}
+@font-face {
+  font-family: "iconfont"; /* Project id 3144102 */
+  src: url('./iconfont/iconfont.woff2?t=1642268231958') format('woff2'),
+       url('./iconfont/iconfont.woff?t=1642268231958') format('woff'),
+       url('./iconfont/iconfont.ttf?t=1642268231958') format('truetype');
+}
+
+@font-face {
+  font-family: "iconfont"; /* Project id 3144102 */
+  src: url('//at.alicdn.com/t/font_3144102_yms7e16adsc.woff2?t=1642324014073') format('woff2'),
+       url('//at.alicdn.com/t/font_3144102_yms7e16adsc.woff?t=1642324014073') format('woff'),
+       url('//at.alicdn.com/t/font_3144102_yms7e16adsc.ttf?t=1642324014073') format('truetype');
+}

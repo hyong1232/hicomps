@@ -1,0 +1,24 @@
+{
+  "name": "hycomponents",
+  "version": "0.0.0",
+  "license": "GPL",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "rimraf": "^3.0.2",
+    "vue": "^3.2.25",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.48.0",
+    "sass-loader": "^12.4.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.2"
+  }
+}
